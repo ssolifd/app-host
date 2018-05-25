@@ -18,7 +18,7 @@ WORKDIR /app
 ADD Gemfile* ./
 RUN bundle install
 COPY . .
-COPY docker/nginx.conf /etc/nginx/sites-enabled/app.conf
+COPY docker/nginx.conf1 /etc/nginx/sites-enabled/app.conf
 
 RUN if [ -f shared/production.sqlite3 ];then mv shared/production.sqlite3 db/production.sqlite3 ; fi
 
