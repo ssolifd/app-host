@@ -3,7 +3,7 @@ upstream app {
 }
 
 server {
-    listen   443;
+    listen   8686;
     server_name 0.0.0.0;
     root /app/public;
     index index.html index.htm;
