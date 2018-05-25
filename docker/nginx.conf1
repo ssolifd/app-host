@@ -1,9 +1,9 @@
 upstream app {
-    server 0.0.0.0:3000;
+    server 0.0.0.0:80;
 }
 
 server {
-    listen   80;
+    listen   8686;
     listen   443 ssl;
     server_name 0.0.0.0;
     root /app/public;
