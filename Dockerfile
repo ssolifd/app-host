@@ -19,7 +19,7 @@ ADD Gemfile* ./
 RUN bundle install
 COPY . .
 COPY docker/nginx.conf1 /etc/nginx/sites-enabled/app.conf
-ADD ssl/* /root
+ADD ssl /root
 RUN if [ -f shared/production.sqlite3 ];then mv shared/production.sqlite3 db/production.sqlite3 ; fi
 
 # 数据库初始化
