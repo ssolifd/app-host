@@ -1,5 +1,5 @@
 upstream app {
-    server 0.0.0.0:80;
+    server 0.0.0.0:3000;
 }
 
 server {
